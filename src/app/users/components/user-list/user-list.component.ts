@@ -48,7 +48,6 @@ export class UserListComponent implements OnInit {
   }
 
   onEdit(user: User): void {
-    // הניווט ממומש בתבנית באמצעות routerLink
   }
 
   onDelete(user: User): void {
