@@ -63,7 +63,7 @@ export class UserEditComponent implements OnInit {
       '',
       [
         Validators.required,
-        // ללא רווחים, אורך מינימלי 3 תווים
+        //No spaces, minimum length 3 characters
         Validators.pattern(/^[^\s]{3,}$/),
         forbiddenUsernameValidator('admin'),
       ],
@@ -95,7 +95,6 @@ export class UserEditComponent implements OnInit {
       return;
     }
 
-    // נוודא שה-users טעונים (במיוחד במקרה שנכנסים ישירות ל-URL של עריכה)
     this.store.dispatch(loadUsers());
 
     this.store
